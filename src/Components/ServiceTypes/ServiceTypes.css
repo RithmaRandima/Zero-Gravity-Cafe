@@ -1,0 +1,125 @@
+.serviceType {
+  width: 100%;
+  height: 74vh;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 120px;
+  margin-top: 200px;
+}
+
+.serviceType .container {
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.serviceTop {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.serviceBottom {
+  flex: 1;
+  width: 100%;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.serviceBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middleText {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  height: 00%;
+  z-index: 3;
+  background-image: linear-gradient(
+    rgba(48, 23, 188, 0.367),
+    rgba(46, 46, 253, 0.634)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 4;
+}
+
+.middleText h1 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.middleText p {
+  font-size: 0.8rem;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.serviceBox img {
+  width: 100%;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.serviceBox.active .serviceBoxBookBtn {
+  display: block;
+}
+.serviceBox:hover img {
+  transform: scale(1.05);
+}
+.serviceBoxBookBtn {
+  background-color: black;
+  border: 1px solid blue;
+  padding: 9px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  outline: 0;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: none;
+}
+
+.serviceBox:hover .serviceBoxBookBtn {
+  display: block;
+}
+
+.serviceBox:hover .middleText {
+  height: 50%;
+  opacity: 1;
+}
+
+.serviceBox.active::after {
+  content: "";
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+    100deg,
+    rgba(53, 117, 255, 0.666),
+    rgba(19, 19, 239, 0.571)
+  );
+
+  z-index: 2;
+}

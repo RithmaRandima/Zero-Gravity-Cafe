@@ -1,0 +1,115 @@
+.testimonials {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(100deg, rgb(67, 124, 247), rgb(3, 3, 119));
+}
+
+.testiContainer {
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testiLeft {
+  padding: 10px;
+  flex-basis: 50%;
+}
+.testiLeft h1 {
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+
+.testiLeft p {
+  margin-top: 20px;
+  font-weight: 100;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.testiRight {
+  flex-basis: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.testiUserSection {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.testUserImgContainer {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.testUserImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testiQuoteMark {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.testiQuote {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+
+.testiUserDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testiUserName {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+  color: #fff;
+}
+.testiUserPosition {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.testiBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: #fff;
+  line-height: 35px;
+  cursor: pointer;
+}
+.testiBtnLeft {
+  border: 2px solid rgb(0, 128, 255);
+  background: #000;
+}
+
+.testiBtnRight {
+  background: rgb(56, 149, 255);
+  border: 2px solid #fff;
+}
+
+.btnIcon {
+  font-size: 13px;
+  font-weight: 100 !important;
+}
