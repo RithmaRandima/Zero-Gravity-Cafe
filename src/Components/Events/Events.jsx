@@ -1,8 +1,8 @@
 import React from "react";
 import "./Events.css";
-import eventPoster01 from "../../Assets/EventPoster02.jpg";
-import eventPoster02 from "../../Assets/EventPoster01.jpg";
-import eventPoster03 from "../../Assets/EventPoster03.jpg";
+import eventPoster01 from "../../Assets/EventPoster01.jpg";
+import eventPoster02 from "../../Assets/EventPoster03.jpg";
+import eventPoster03 from "../../Assets/EventPoster02.jpg";
 
 const Events = () => {
   return (

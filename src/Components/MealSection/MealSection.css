@@ -57,7 +57,7 @@
   border-radius: 50%;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.281),
-    rgba(0, 0, 255, 0.501)
+    rgb(0, 247, 255, 0.5)
   );
   transition: 0.5s;
 }
@@ -95,7 +95,7 @@
 }
 
 .mealTopRightHeadingTwo {
-  color: blue;
+  color: rgb(0, 247, 255);
 }
 .mealTopRight .mealTopRightInfo {
   margin-top: 30px;
@@ -111,8 +111,8 @@
   width: 100%;
   height: 100%;
   flex-basis: 33%;
-  border: 2px solid rgba(67, 124, 247, 0.529);
-  background-color: rgba(67, 124, 247, 0.089);
+  border: 1px solid rgb(0, 247, 255);
+  background-color: rgba(0, 247, 255, 0.08);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 191, 255, 0.462);
+  border-bottom: 1px solid rgba(0, 247, 255, 0.185);
   padding-bottom: 15px;
 }
 .box-content-2 {
@@ -148,10 +148,10 @@
 }
 
 .meal-heading {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: rgb(67, 124, 247);
-  margin-bottom: 10px;
+  color: rgba(0, 247, 255, 0.904);
+  margin-bottom: 13px;
 }
 
 .meal-info {
@@ -165,8 +165,8 @@
 .cafeBtn {
   background-color: black;
   color: #fff;
-  padding: 14px 60px;
-  border: 2px solid blue;
+  padding: 16px 60px;
+  border: 1px solid rgb(0, 247, 255);
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;

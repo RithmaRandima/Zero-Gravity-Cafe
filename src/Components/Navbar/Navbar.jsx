@@ -34,7 +34,9 @@ const Navbar = () => {
         <li onClick={() => setNavActive("home")}>
           <Link
             to="/"
-            style={{ color: navActive === "home" ? "blue" : "white" }}
+            style={{
+              color: navActive === "home" ? "rgb(0, 247, 255)" : "white",
+            }}
           >
             Home
           </Link>
@@ -42,7 +44,9 @@ const Navbar = () => {
         <li onClick={() => setNavActive("about")}>
           <Link
             to="/about"
-            style={{ color: navActive === "about" ? "blue" : "white" }}
+            style={{
+              color: navActive === "about" ? " rgb(254, 15, 254)" : "white",
+            }}
           >
             About
           </Link>
@@ -50,7 +54,9 @@ const Navbar = () => {
         <li onClick={() => setNavActive("pricing")}>
           <Link
             to="/pricing"
-            style={{ color: navActive === "pricing" ? "blue" : "white" }}
+            style={{
+              color: navActive === "pricing" ? "rgb(0, 247, 255)" : "white",
+            }}
           >
             Pricing
           </Link>
@@ -58,7 +64,9 @@ const Navbar = () => {
         <li onClick={() => setNavActive("training")}>
           <Link
             to="/training"
-            style={{ color: navActive === "training" ? "blue" : "white" }}
+            style={{
+              color: navActive === "training" ? "rgb(0, 247, 255)" : "white",
+            }}
           >
             Training
           </Link>
@@ -66,7 +74,9 @@ const Navbar = () => {
         <li onClick={() => setNavActive("contact")}>
           <Link
             to="/contact"
-            style={{ color: navActive === "contact" ? "blue" : "white" }}
+            style={{
+              color: navActive === "contact" ? "rgb(0, 247, 255)" : "white",
+            }}
           >
             Contact
           </Link>

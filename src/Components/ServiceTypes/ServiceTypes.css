@@ -21,6 +21,10 @@
   margin: 20px 0;
 }
 
+.serviceTop h1 {
+  font-weight: 300;
+}
+
 .serviceBottom {
   flex: 1;
   width: 100%;
@@ -46,9 +50,10 @@
   height: 00%;
   z-index: 3;
   background-image: linear-gradient(
-    rgba(48, 23, 188, 0.367),
-    rgba(46, 46, 253, 0.634)
+    rgba(23, 152, 188, 0.267),
+    rgba(0, 247, 255, 0.671)
   );
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +66,7 @@
 .middleText h1 {
   font-size: 1.7rem;
   margin-bottom: 10px;
+  /* color: #000; */
 }
 
 .middleText p {
@@ -83,7 +89,7 @@
 }
 .serviceBoxBookBtn {
   background-color: black;
-  border: 1px solid blue;
+  border: 1px solid rgb(0, 247, 255);
   padding: 9px 24px;
   color: #fff;
   text-transform: uppercase;
@@ -116,9 +122,9 @@
   position: absolute;
   z-index: 1;
   background-image: linear-gradient(
-    100deg,
-    rgba(53, 117, 255, 0.666),
-    rgba(19, 19, 239, 0.571)
+    190deg,
+    rgba(0, 180, 245, 0.022),
+    rgba(0, 247, 255, 0.421)
   );
 
   z-index: 2;

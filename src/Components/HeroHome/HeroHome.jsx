@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeroHome.css";
-import space_video from "../../Assets/216035.mp4";
+import space_video from "../../Assets/New/7547574-uhd_3840_2160_25fps.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 
 const HeroHome = () => {
@@ -14,7 +14,10 @@ const HeroHome = () => {
         <h1>
           Immersive <br /> Experience That <br />
           Feel Like{" "}
-          <span style={{ color: "blue", fontWeight: "700" }}> The Future</span>
+          <span style={{ color: " rgb(0, 247, 255)", fontWeight: "700" }}>
+            {" "}
+            The Future
+          </span>
         </h1>
         <p>
           The Best VR Experience On The Planet is Right Here in Your
