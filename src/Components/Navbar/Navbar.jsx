@@ -51,14 +51,14 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li onClick={() => setNavActive("pricing")}>
+        <li onClick={() => setNavActive("packages")}>
           <Link
-            to="/pricing"
+            to="/packages"
             style={{
-              color: navActive === "pricing" ? "rgb(0, 247, 255)" : "white",
+              color: navActive === "packages" ? "rgb(0, 247, 255)" : "white",
             }}
           >
-            Pricing
+            Packages
           </Link>
         </li>
         <li onClick={() => setNavActive("training")}>

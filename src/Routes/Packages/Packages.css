@@ -1,0 +1,8 @@
+.packages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../Assets/New/3d-render-modern-network-communications-low-poly-plexus-design.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100%;
+}
