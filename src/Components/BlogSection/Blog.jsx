@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.css";
-import img from "../../Assets/New/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg";
+import img from "../../Assets/New/MealImg.jpg";
 
 const Blog = () => {
   return (

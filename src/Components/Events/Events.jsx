@@ -1,8 +1,10 @@
 import React from "react";
 import "./Events.css";
 import eventPoster01 from "../../Assets/EventPoster01.jpg";
-import eventPoster02 from "../../Assets/EventPoster03.jpg";
-import eventPoster03 from "../../Assets/EventPoster02.jpg";
+import eventPoster02 from "../../Assets/EventPoster02.jpg";
+import eventPoster03 from "../../Assets/EventPoster03.jpg";
+import eventPoster04 from "../../Assets/EventPoster04.jpg";
+import EventBox from "../EventBox/EventBox";
 
 const Events = () => {
   return (
@@ -19,45 +21,10 @@ const Events = () => {
           </p>
         </div>
         <div className="eventBoxContainer">
-          <div className="eventBox">
-            <div className="eventImgContainer">
-              <img src={eventPoster01} alt="" />
-            </div>
-            <div className="eventInfo">
-              <p className="eventTitle">Take IT</p>
-              <p className="eventDate">JUNE 23 2024</p>
-              <p className="eventDetail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quia rerum ex odio?
-              </p>
-            </div>
-          </div>
-          <div className="eventBox">
-            <div className="eventImgContainer">
-              <img src={eventPoster02} alt="" />
-            </div>
-            <div className="eventInfo">
-              <p className="eventTitle">Pool Boys</p>
-              <p className="eventDate">JUL 17 2024</p>
-              <p className="eventDetail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quia rerum ex odio?
-              </p>
-            </div>
-          </div>
-          <div className="eventBox">
-            <div className="eventImgContainer">
-              <img src={eventPoster03} alt="" />
-            </div>
-            <div className="eventInfo">
-              <p className="eventTitle">Mid Night Music</p>
-              <p className="eventDate">JUNE 31 2024</p>
-              <p className="eventDetail">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quia rerum ex odio?
-              </p>
-            </div>
-          </div>
+          <EventBox img={eventPoster01} title="Pool Boys" date="JUL 17 2024" />
+          <EventBox img={eventPoster02} title="Take IT" date="JUNE 23 2024" />
+          <EventBox img={eventPoster03} title="Mid Night" date="JUNE 31 2024" />
+          <EventBox img={eventPoster04} title="Take IT" date="JUNE 23 2024" />
         </div>
         <button className="eventBtn">View More Events</button>
       </div>

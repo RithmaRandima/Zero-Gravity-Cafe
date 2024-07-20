@@ -1,5 +1,5 @@
 import React from "react";
-import About_Hero_video from "../../Assets/New/coverr-temp-ljphwatermarkedvideo049b24155047c4c4889f6021d87c3255dmp4-9645-1080p.mp4";
+import about__video from "../../Assets/New/AboutHero.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./HeroAbout.css";
@@ -9,7 +9,7 @@ const HeroAbout = () => {
   return (
     <div className="heroAbout">
       <video autoPlay loop muted id="aboutVideo">
-        <source src={About_Hero_video} type="video/mp4" />
+        <source src={about__video} type="video/mp4" />
       </video>
       <div className="AboutContent">
         <h1>

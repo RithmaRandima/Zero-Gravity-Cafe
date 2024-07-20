@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeroHome.css";
-import space_video from "../../Assets/New/7547574-uhd_3840_2160_25fps.mp4";
+import home_video from "../../Assets/New/HomeHero.mp4";
 import { FaPlayCircle } from "react-icons/fa";
+import { ReactTyped } from "react-typed";
 
 const HeroHome = () => {
   return (
     <div className="hero">
       <video autoPlay loop muted id="video">
-        <source src={space_video} type="video/mp4" />
+        <source src={home_video} type="video/mp4" />
       </video>
       <div className="content">
         <h1>
@@ -16,7 +17,7 @@ const HeroHome = () => {
           Feel Like{" "}
           <span style={{ color: " rgb(0, 247, 255)", fontWeight: "700" }}>
             {" "}
-            The Future
+            <ReactTyped strings={["The Future"]} typeSpeed={490} loop />
           </span>
         </h1>
         <p>

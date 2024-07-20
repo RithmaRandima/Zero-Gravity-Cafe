@@ -2,6 +2,7 @@ import React from "react";
 import "./Staff.css";
 import { Parallax } from "react-parallax";
 import img1 from "../../Assets/New/pexels-tima-miroshnichenko-6498312.jpg";
+import StaffMemberBox from "../StaffMemberBox/StaffMemberBox";
 
 const Staff = () => {
   return (
@@ -25,34 +26,10 @@ const Staff = () => {
             </div>
           </div>
           <div className="staffContentBottom">
-            <div className="staffContentBottomBox">
-              <img src={img1} alt="" />
-              <div className="staffContentBottomBoxInfo">
-                <p className="staffMemberName">Rithma Randima</p>
-                <p className="staffMemberPosition">Owner</p>
-              </div>
-            </div>
-            <div className="staffContentBottomBox">
-              <img src={img1} alt="" />
-              <div className="staffContentBottomBoxInfo">
-                <p className="staffMemberName">Rithma Randima</p>
-                <p className="staffMemberPosition">Owner</p>
-              </div>
-            </div>
-            <div className="staffContentBottomBox">
-              <img src={img1} alt="" />
-              <div className="staffContentBottomBoxInfo">
-                <p className="staffMemberName">Rithma Randima</p>
-                <p className="staffMemberPosition">Owner</p>
-              </div>
-            </div>
-            <div className="staffContentBottomBox">
-              <img src={img1} alt="" />
-              <div className="staffContentBottomBoxInfo">
-                <p className="staffMemberName">Rithma Randima</p>
-                <p className="staffMemberPosition">Owner</p>
-              </div>
-            </div>
+            <StaffMemberBox img={img1} name="Rithma Randima" position="Owner" />
+            <StaffMemberBox img={img1} name="Rithma Randima" position="Owner" />
+            <StaffMemberBox img={img1} name="Rithma Randima" position="Owner" />
+            <StaffMemberBox img={img1} name="Rithma Randima" position="Owner" />
           </div>
         </div>
       </Parallax>

@@ -2,8 +2,8 @@ import React from "react";
 import "./ServiceTypes.css";
 import box_img_01 from "../../Assets/ServiceBoxImg1.png";
 import box_img_02 from "../../Assets/ServiceBoxImg2.png";
-import box_img_03 from "../../Assets/HomeNewsLetterImg.png";
-import box_img_04 from "../../Assets/HomeNewsLetterSmall.png";
+import box_img_03 from "../../Assets/ServiceBoxImg3.png";
+import box_img_04 from "../../Assets/ServiceBoxImg4.png";
 
 const ServiceTypes = () => {
   return (

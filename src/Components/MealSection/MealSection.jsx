@@ -1,6 +1,6 @@
 import React from "react";
 import "./MealSection.css";
-import img1 from "../../Assets/New/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg";
+import meal_img from "../../Assets/New/MealImg.jpg";
 import { FaChevronDown } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 
@@ -11,7 +11,7 @@ const MealSection = () => {
         <div className="meal-top">
           <div className="mealTopLeft">
             <div className="mealTopImgContainer">
-              <img src={img1} alt="" />
+              <img src={meal_img} alt="" />
             </div>
           </div>
           <div className="mealTopRight">

@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import HeroHome from "../../Components/HeroHome/HeroHome";
 import Footer from "../../Components/Footer/Footer";
-// import About from "../../Components/About/About";
 import HomeNewsLetterOne from "../../Components/HomeNewsLetter1/HomeNewsLetterOne";
 import Experience from "../../Components/Experience/Experience";
 import ServiceTypes from "../../Components/ServiceTypes/ServiceTypes";
