@@ -1,5 +1,111 @@
 .staffSection {
   width: 100%;
-  height: 100vh;
-  background-image: url("../../Assets/ServiceBoxImg1.png");
+  height: 110vh;
+  margin-top: 40px;
+}
+
+.staffSectionBackground {
+  width: 100%;
+  height: 110vh;
+  object-fit: cover !important;
+  background-size: contain;
+}
+
+.staffContainer {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+.staffContentTop {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.contentInfo {
+  text-align: center;
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.contentInfo h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.contentInfo p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.staffContactBtn {
+  padding: 14px 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(254, 15, 254);
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.staffContentBottom {
+  flex-basis: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+.staffContentBottomBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.staffContentBottomBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.staffContentBottomBoxInfo {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.416),
+    rgba(254, 15, 254, 0.74)
+  );
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.staffMemberName {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+.staffMemberPosition {
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.staffContentBottomBox:hover img {
+  transform: scale(1.03);
+}
+
+.staffContentBottomBox:hover .staffContentBottomBoxInfo {
+  height: 110px;
+  opacity: 1;
 }
