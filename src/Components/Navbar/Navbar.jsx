@@ -61,16 +61,6 @@ const Navbar = () => {
             Packages
           </Link>
         </li>
-        <li onClick={() => setNavActive("training")}>
-          <Link
-            to="/training"
-            style={{
-              color: navActive === "training" ? "rgb(0, 247, 255)" : "white",
-            }}
-          >
-            Training
-          </Link>
-        </li>
         <li onClick={() => setNavActive("contact")}>
           <Link
             to="/contact"
