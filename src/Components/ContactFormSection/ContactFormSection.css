@@ -1,0 +1,142 @@
+.contact-form-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form-left {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left-img-container {
+  height: 90vh;
+  width: 430px;
+  border-radius: 20px;
+  rotate: 2deg;
+  position: absolute;
+  z-index: 10;
+}
+.contact-left-img-container img {
+  height: 90vh;
+  width: 430px;
+  border-radius: 20px;
+}
+.contact-left-img-container::before {
+  content: "";
+  height: 90vh;
+  width: 430px;
+  border: 3px dashed rgb(0, 247, 255);
+  border-radius: 40px;
+  rotate: 8deg;
+  position: absolute;
+  animation: beforeBorder 2s linear infinite;
+}
+
+@keyframes beforeBorder {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact-left-img-container::after {
+  content: "";
+  height: 90vh;
+  width: 430px;
+  border: 3px dashed rgb(254, 15, 254);
+  border-radius: 50px;
+  rotate: 4deg;
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  animation: afterBorder 1.3s linear infinite;
+}
+
+@keyframes afterBorder {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact-form-right {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.contact-sub-title {
+  margin: 15px 0 5px;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(254, 15, 254);
+}
+
+.contact-title {
+  margin: 0 0 10px;
+  font-size: 38px;
+  font-weight: 600;
+  color: white;
+}
+
+.form-section {
+  margin-top: 40px;
+}
+.contact-input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 50%;
+  margin-bottom: 25px;
+}
+.contact-input-container input,
+.contact-input-container textarea {
+  width: 94%;
+  padding: 10px 15px;
+  background: #000000;
+  border: 1px solid rgb(0, 247, 255);
+  border-radius: 7px;
+  color: rgb(0, 247, 255);
+  font-size: 17px;
+  outline: none;
+}
+.contact-input-container input:focus,
+.contact-input-container textarea:focus {
+  border: 1px solid rgb(254, 15, 254);
+}
+.contact-input-container label {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.contact-form-button {
+  background: rgb(0, 247, 255);
+  padding: 11px 27px;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 50px;
+}

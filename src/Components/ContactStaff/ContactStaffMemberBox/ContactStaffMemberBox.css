@@ -1,0 +1,71 @@
+.contactStaffContentBottomBox {
+  width: 95%;
+  height: 300px;
+  margin: 5px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactStaffContentBottomBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.contactStaffContentBottomBoxInfo {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.416),
+    rgba(254, 15, 254, 0.74)
+  );
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.contactStaffMemberName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.contactStaffMemberPosition {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.contactSocialItemContainer {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+.contactSocialIcon {
+  font-size: 15px;
+  color: rgba(0, 247, 255, 0.758);
+  color: black;
+  transition: 0.4s;
+}
+.contactSocialIcon:hover {
+  color: rgba(0, 247, 255, 0.758);
+  transform: scale(1.3);
+}
+
+.contactStaffContentBottomBox:hover img {
+  transform: scale(1.03);
+}
+
+.contactStaffContentBottomBox:hover .contactStaffContentBottomBoxInfo {
+  height: 110px;
+  opacity: 1;
+}

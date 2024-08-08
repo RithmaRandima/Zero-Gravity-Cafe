@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Routes/Home/Home";
-import Training from "./Routes/Training/Training";
 import Contact from "./Routes/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import AboutPage from "./Routes/AboutPage/AboutPage";
@@ -15,8 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/packages" element={<Packages />} />
-          <Route path="/training" />
-          <Route path="/contact" />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

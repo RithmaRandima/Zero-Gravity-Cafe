@@ -1,0 +1,58 @@
+.contactStaffSection {
+  width: 100%;
+  height: 110vh;
+  margin-top: 0px;
+}
+
+.contactStaffSectionBackground {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover !important;
+  background-size: contain;
+}
+
+.contactStaffContainer {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+}
+.contactStaffContentTop {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.contactContentInfo {
+  text-align: center;
+  width: 700px;
+  padding-top: 40px;
+}
+
+.contactContentInfo h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.contactContentInfo p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.staffContactBtn {
+  padding: 14px 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(254, 15, 254);
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.contactStaffContentBottom {
+  flex-basis: 60%;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}

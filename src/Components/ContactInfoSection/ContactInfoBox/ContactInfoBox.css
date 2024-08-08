@@ -1,0 +1,35 @@
+.contact-info-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 10px rgb(254, 15, 254);
+  font-size: 28px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.box-icon:hover {
+  background: rgb(254, 15, 254);
+}
+.box-title {
+  margin: 8px 0;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.box-title-value {
+  color: white;
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -65,7 +65,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             style={{
-              color: navActive === "contact" ? "rgb(0, 247, 255)" : "white",
+              color: navActive === "contact" ? " rgb(254, 15, 254)" : "white",
             }}
           >
             Contact
