@@ -68,7 +68,6 @@
   position: absolute;
   bottom: 10px;
   right: 290px;
-
   padding: 10px;
   border: 2px solid rgb(0, 247, 255);
 }
@@ -87,4 +86,38 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 840px) {
+  .cinemaPrice {
+    height: 45vh;
+    margin-bottom: -70px;
+  }
+  .cinemaPriceContainer {
+    flex-direction: column;
+  }
+  .gamingPrice {
+    margin-bottom: 80px;
+  }
+  .cinemaImgContainerOne,
+  .cinemaImgContainerTwo {
+    display: none;
+  }
+
+  .cinemaPriceTitle {
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .cinemaPriceContainerLeft p {
+    font-size: 14px;
+    text-align: right;
+  }
+  .cinemaPriceTextH1 {
+    text-align: right;
+    margin-right: 170px;
+  }
+  .cinemaPriceText {
+    left: 420px;
+  }
 }

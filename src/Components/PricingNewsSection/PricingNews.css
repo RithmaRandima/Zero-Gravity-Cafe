@@ -102,3 +102,28 @@
 .newsBottomBox:hover .newsImgContainer img {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 840px) {
+  .news {
+    height: 100%;
+    margin: 70px 0 70px;
+  }
+  .newsTopSection h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .newsTopSection p {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .newsBottomSection {
+    grid-template-columns: 1fr;
+  }
+  .newsBottomBox {
+    width: 70%;
+    margin: auto;
+  }
+}

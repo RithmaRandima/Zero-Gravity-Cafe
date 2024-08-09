@@ -24,7 +24,6 @@ const ServicesPrices = () => {
                 vitae deserunt delectus autem excepturi, quod ex voluptatum
                 repellendus a liquid nemo quam, eius eos sint sapiente
               </p>
-              <button className="servicePriceContactBtn">Contact US</button>
             </div>
           </div>
           <div className="servicePriceContentBottom">

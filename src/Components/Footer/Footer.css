@@ -88,7 +88,7 @@
 @media screen and (max-width: 640px) {
   .footer-top {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 75%;
     text-align: center;
   }
 
