@@ -1,0 +1,30 @@
+.SmoothieSection {
+  width: 95%;
+  height: 100%;
+  margin: 100px auto;
+}
+.SmoothieBoxTitle {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.SmoothieBoxTitle h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.SmoothieBoxTitle p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.SmoothieSectionContainer {
+  width: 100%;
+  height: 100%;
+}

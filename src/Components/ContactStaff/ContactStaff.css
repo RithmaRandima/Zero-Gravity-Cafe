@@ -1,19 +1,19 @@
 .contactStaffSection {
   width: 100%;
-  height: 110vh;
+  height: 100%;
   margin-top: 0px;
 }
 
 .contactStaffSectionBackground {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover !important;
   background-size: contain;
 }
 
 .contactStaffContainer {
   width: 100%;
-  height: 110vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -55,4 +55,19 @@
   width: 90%;
   height: 100%;
   margin: auto;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .contactContentInfo {
+    text-align: left;
+    padding: 20px 10px;
+  }
+
+  .contactContentInfo h1 {
+    font-size: 2rem;
+  }
+  .contactContentInfo p {
+    font-size: 14px;
+  }
 }

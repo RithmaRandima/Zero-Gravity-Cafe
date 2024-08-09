@@ -31,7 +31,7 @@ const Footer = () => {
             <p>News</p>
           </div>
 
-          <div className="footer-top-content-box">
+          <div className="footer-top-content-box footer-top-content-box-3">
             <h5>Support</h5>
             <p>FAQs</p>
             <p>Proof of Payments</p>
@@ -66,6 +66,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="footer-bottom">
           <p>&#169; Zero Gravity Cafe 2024 &#183; All Right Reserved.</p>
           <div style={{ display: "flex" }}>

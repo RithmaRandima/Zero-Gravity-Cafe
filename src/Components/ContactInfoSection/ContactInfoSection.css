@@ -6,3 +6,11 @@
   gap: 40px;
   padding: 0 40px;
 }
+
+@media screen and (max-width: 840px) {
+  .contact-info-container {
+    height: 100%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -2,8 +2,45 @@ import React from "react";
 import "./AboutServices.css";
 import img from "../../Assets/EventPoster02.jpg";
 import { ReactTyped } from "react-typed";
+import AboutServiceBox from "../AboutServiceBox/AboutServiceBox";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const AboutServices = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
   return (
     <div className="aboutServices">
       <div className="aboutServicesContainer">
@@ -23,83 +60,12 @@ const AboutServices = () => {
           </p>
         </div>
         <div className="aboutServiceBottom">
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
-
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
-
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
-
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
-
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
-
-          <div className="aboutServiceBox">
-            <div className="serviceBoxImg">
-              <img src={img} alt="" />
-            </div>
-            <div className="serviceBoxInfo">
-              <h1 className="serviceBoxTitle">Lorem ipsum dolor sit amet.</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                neque at nemo!
-              </p>
-            </div>
-          </div>
+          <Slider {...settings}>
+            <AboutServiceBox img={img} />
+            <AboutServiceBox img={img} />
+            <AboutServiceBox img={img} />
+            <AboutServiceBox img={img} />
+          </Slider>
         </div>
       </div>
     </div>

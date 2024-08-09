@@ -18,7 +18,7 @@
 
 .newsTopSection h1 {
   font-size: 2.6rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 5px;
   color: #fff;
 }
@@ -27,6 +27,7 @@
   font-size: 1rem;
   font-weight: 100;
   margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 .newsBottomSection {

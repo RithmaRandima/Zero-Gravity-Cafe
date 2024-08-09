@@ -9,7 +9,7 @@ import ContactNewsletter from "../../Components/ContactNewsletter/ContactNewslet
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contacts">
       <HeroContact />
       <ContactFormSection />
       <ContactInfoSection />

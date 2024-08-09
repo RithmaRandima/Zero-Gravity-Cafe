@@ -1,0 +1,8 @@
+.contacts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("../../Assets/Background-Image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100%;
+}

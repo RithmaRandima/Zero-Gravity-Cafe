@@ -22,8 +22,9 @@
   z-index: 10;
 }
 .contact-left-img-container img {
-  height: 90vh;
-  width: 430px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 20px;
 }
 .contact-left-img-container::before {
@@ -139,4 +140,83 @@
   font-size: 14px;
   font-weight: bolder;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 840px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-left {
+    height: 70vh;
+  }
+  .contact-left-img-container {
+    height: 60vh;
+    width: 330px;
+  }
+  .contact-left-img-container::before {
+    height: 60vh;
+    width: 330px;
+  }
+  .contact-left-img-container::after {
+    height: 60vh;
+    width: 330px;
+  }
+
+  .contact-sub-title {
+    font-size: 19px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-input-container input,
+  .contact-input-container textarea {
+    width: 94%;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .contact-form-button {
+    padding: 9px 20px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact-form-left {
+    height: 60vh;
+  }
+  .contact-left-img-container {
+    height: 50vh;
+    width: 300px;
+  }
+  .contact-left-img-container::before {
+    height: 50vh;
+    width: 300px;
+  }
+  .contact-left-img-container::after {
+    height: 50vh;
+    width: 300px;
+  }
+
+  .contact-sub-title {
+    font-size: 19px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-input-container input,
+  .contact-input-container textarea {
+    width: 94%;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .contact-form-button {
+    padding: 9px 20px;
+    font-size: 10px;
+  }
 }

@@ -3,17 +3,10 @@ import "./ContactStaffMemberBox.css";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
-  FaPhone,
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import {
-  PiPaypalLogo,
-  PiPaypalLogoBold,
-  PiPaypalLogoFill,
-} from "react-icons/pi";
 
 const ContactStaffMemberBox = (props) => {
   return (

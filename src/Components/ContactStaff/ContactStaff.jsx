@@ -1,7 +1,13 @@
 import React from "react";
 import "./ContactStaff.css";
 import { Parallax } from "react-parallax";
-import img1 from "../../Assets/New/pexels-tima-miroshnichenko-6498312.jpg";
+import backgroundImage from "../../Assets/Background-Image.jpg";
+import img1 from "../../Assets/staff-1.avif";
+import img2 from "../../Assets/staff-2.jpg";
+import img3 from "../../Assets/staff-3.jpg";
+import img4 from "../../Assets/staff-4.jpg";
+import img5 from "../../Assets/staff-5.webp";
+import img6 from "../../Assets/staff-6.jpg";
 import ContactStaffMemberBox from "./ContactStaffMemberBox/ContactStaffMemberBox";
 
 import "slick-carousel/slick/slick.css";
@@ -45,7 +51,7 @@ const ContactStaff = () => {
     <div className="contactStaffSection">
       <Parallax
         className="contactStaffSectionBackground"
-        bgImage={img1}
+        bgImage={backgroundImage}
         strength={200}
       >
         <div className="contactStaffContainer">
@@ -64,23 +70,33 @@ const ContactStaff = () => {
             <Slider {...settings}>
               <ContactStaffMemberBox
                 img={img1}
-                name="Rithma Randima"
-                position="Owner"
+                name="Henry Cavil"
+                position="Founder / CEO"
               />
               <ContactStaffMemberBox
-                img={img1}
-                name="Rithma Randima"
-                position="Owner"
+                img={img2}
+                name="Thisara Perera "
+                position="Travel Argent"
               />
               <ContactStaffMemberBox
-                img={img1}
+                img={img3}
                 name="Rithma Randima"
-                position="Owner"
+                position="Travel Argent"
               />
               <ContactStaffMemberBox
-                img={img1}
-                name="Rithma Randima"
-                position="Owner"
+                img={img4}
+                name="Tharushi Gunarathne"
+                position="Travel Argent"
+              />
+              <ContactStaffMemberBox
+                img={img5}
+                name="Amber Heard"
+                position="Manager"
+              />
+              <ContactStaffMemberBox
+                img={img6}
+                name="Lahiru Chanchala"
+                position="Travel Argent"
               />
             </Slider>
           </div>

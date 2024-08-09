@@ -6,8 +6,8 @@ import GamingPrice from "../../Components/GamePriceSection/GamingPrice";
 import CinemaPricing from "../../Components/CinemaPricing/CinemaPricing";
 import PricingVideoSection from "../../Components/PricingVideoSection/PricingVideoSection";
 import PricingNews from "../../Components/PricingNewsSection/PricingNews";
-import Staff from "../../Components/Staff/Staff";
 import ServicesPrices from "../../Components/ServicesPricesSection/ServicesPrices";
+import SmoothieSection from "../../Components/SmoothieSection/SmoothieSection";
 
 const Packages = () => {
   return (
@@ -15,6 +15,7 @@ const Packages = () => {
       <HeroPackages />
       <GamingPrice />
       <CinemaPricing />
+      <SmoothieSection />
       <PricingVideoSection />
       <PricingNews />
       <ServicesPrices />

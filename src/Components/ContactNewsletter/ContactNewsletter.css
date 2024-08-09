@@ -18,10 +18,8 @@
 .contact-newsletter h1 {
   font-size: 35px;
   width: 80%;
-  /* color: black; */
 }
 .contact-newsletter p {
-  /* color: black; */
   width: 60%;
   font-size: 16px;
   margin: 15px 0;
@@ -34,4 +32,22 @@
   color: #fff;
   border-radius: 50px;
   margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-newsletter h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
+  .contact-newsletter p {
+    width: 70%;
+    font-size: 14px;
+    margin: 10px 0;
+    letter-spacing: 0px;
+  }
+  .contact-newsletter button {
+    font-size: 10px;
+    margin-top: 5px;
+  }
 }
