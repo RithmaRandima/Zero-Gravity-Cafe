@@ -1,6 +1,7 @@
 import React from "react";
 import "./CinemaPricing.css";
-import img from "../../Assets/EventPoster02.jpg";
+import img1 from "../../Assets/priceMovie-1.webp";
+import img2 from "../../Assets/priceMovie-2.webp";
 
 const CinemaPricing = () => {
   return (
@@ -22,9 +23,11 @@ const CinemaPricing = () => {
         </div>
         <div className="cinemaPriceContainerRight">
           <div className="cinemaImgContainerOne">
-            <img src={img} alt="" />
+            <img src={img1} alt="" />
           </div>
-          <div className="cinemaImgContainerTwo"></div>
+          <div className="cinemaImgContainerTwo">
+            <img src={img2} alt="" />
+          </div>
         </div>
       </div>
     </div>

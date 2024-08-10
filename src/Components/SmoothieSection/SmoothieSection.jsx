@@ -1,6 +1,6 @@
 import React from "react";
 import "./SmoothieSection.css";
-import img1 from "../../Assets/news-1.jpg";
+import img1 from "../../Assets/news-3.webp";
 import SmoothieBox from "./SmoothieBox/SmoothieBox";
 
 import "slick-carousel/slick/slick.css";

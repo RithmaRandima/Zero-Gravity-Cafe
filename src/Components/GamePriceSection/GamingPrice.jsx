@@ -1,6 +1,7 @@
 import React from "react";
 import "./GamingPrice.css";
-import img from "../../Assets/EventPoster02.jpg";
+import img1 from "../../Assets/priceGaming-1.jpg";
+import img2 from "../../Assets/priceGaming-2.jpg";
 
 const GamingPrice = () => {
   return (
@@ -8,9 +9,11 @@ const GamingPrice = () => {
       <div className="gamingPriceContainer">
         <div className="gamingPriceContainerLeft">
           <div className="gamingImgContainerOne">
-            <img src={img} alt="" />
+            <img src={img1} alt="" />
           </div>
-          <div className="gamingImgContainerTwo"></div>
+          <div className="gamingImgContainerTwo">
+            <img src={img2} alt="" />
+          </div>
         </div>
         <div className="gamingPriceContainerRight">
           <h1 className="gamingPriceTitle">New Experience in Playing Games</h1>

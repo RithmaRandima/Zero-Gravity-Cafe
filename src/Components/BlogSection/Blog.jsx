@@ -1,6 +1,8 @@
 import React from "react";
 import "./Blog.css";
-import img from "../../Assets/MealImg.jpg";
+import img1 from "../../Assets/service-1.jpg";
+import img2 from "../../Assets/service-2.jpg";
+import img3 from "../../Assets/service-3.jpg";
 
 const Blog = () => {
   return (
@@ -16,7 +18,7 @@ const Blog = () => {
         <div className="blogBottomSection">
           <div className="blogBottomBox">
             <div className="blogImgContainer">
-              <img src={img} alt="" />
+              <img src={img1} alt="" />
             </div>
             <div className="blogBoxTopInfo">
               <p>Admin</p>
@@ -38,7 +40,7 @@ const Blog = () => {
 
           <div className="blogBottomBox">
             <div className="blogImgContainer">
-              <img src={img} alt="" />
+              <img src={img2} alt="" />
             </div>
             <div className="blogBoxTopInfo">
               <p>Admin</p>
@@ -60,7 +62,7 @@ const Blog = () => {
 
           <div className="blogBottomBox">
             <div className="blogImgContainer">
-              <img src={img} alt="" />
+              <img src={img3} alt="" />
             </div>
             <div className="blogBoxTopInfo">
               <p>Admin</p>
