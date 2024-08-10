@@ -23,13 +23,14 @@
 }
 .eventTop h1 {
   font-weight: 400;
-  margin: 10px 0 8px;
+  margin: 10px 0;
   font-size: 2.3rem;
+  line-height: 1.2;
 }
 
 .eventTop p {
   font-size: 0.98rem;
-  line-height: 1.4;
+  line-height: 2;
   font-weight: 100;
   width: 90%;
 }
@@ -46,7 +47,7 @@
   padding: 30px;
 }
 .eventBox {
-  width: 100%;
+  width: 100% !important;
   height: fit-content;
   background-image: linear-gradient(
     to Bottom,
@@ -118,4 +119,24 @@
   border-radius: 50px;
   font-size: 12px;
   font-weight: 100 !important;
+}
+
+@media screen and (max-width: 840px) {
+  .events {
+    height: 100%;
+  }
+  .eventBoxContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .eventBox {
+    width: 90% !important;
+  }
+  .eventBox:nth-child(2),
+  .eventBox:nth-child(3) {
+    margin-top: 0px;
+  }
+  .eventImgContainer {
+    height: 280px !important;
+  }
 }
