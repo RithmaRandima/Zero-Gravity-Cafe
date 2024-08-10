@@ -16,7 +16,6 @@
 
 .left,
 .right {
-  /* background-color: red; */
   height: 100%;
   flex: 1;
 }
@@ -61,7 +60,6 @@
 .img-container-2 {
   width: 200px;
   height: 200px;
-  /* background-color: rgba(0, 70, 128, 0.368); */
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -74,4 +72,32 @@
 
 .img-container-2 img {
   width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+  .newsLetterOne {
+    margin-top: 30px;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+  .learnMore {
+    padding: 10px 20px;
+  }
+  .right {
+    display: none;
+  }
 }

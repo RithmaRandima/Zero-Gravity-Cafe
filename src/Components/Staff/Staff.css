@@ -33,7 +33,7 @@
 }
 
 .contentInfo h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 4rem;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -45,7 +45,20 @@
 
 .staffContentBottom {
   flex-basis: 60%;
-  width: 90%;
+  width: 85%;
   margin: auto;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 840px) {
+  .contentInfo {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .contentInfo h1 {
+    font-size: 2rem;
+  }
+  .contentInfo p {
+    font-size: 14px;
+  }
 }

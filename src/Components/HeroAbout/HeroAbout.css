@@ -117,11 +117,15 @@
     top: 40vh;
     padding-right: 0px;
   }
-  .content h1 {
-    font-size: 3.3rem !important;
+  .heroAbout .AboutContent h1 {
+    font-size: 2.5rem !important;
   }
-  .content p {
-    font-size: 1.3rem !important;
-    margin-bottom: 3rem;
+
+  .aboutContentSpan {
+    font-size: 2.5em;
+  }
+  .heroAbout .AboutContent p {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
   }
 }

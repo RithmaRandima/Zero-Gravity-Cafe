@@ -1,14 +1,6 @@
 * {
   scroll-behavior: smooth;
 }
-/* 
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgb(29, 29, 29);
-  height: 10px;
-} */
 
 .about {
   background-size: cover;
