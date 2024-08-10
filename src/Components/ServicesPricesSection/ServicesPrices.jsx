@@ -1,13 +1,47 @@
 import React from "react";
 import "./ServicesPrices.css";
 import { Parallax } from "react-parallax";
-import backgroundImg from "../../Assets/New/Service-Price-BG.jpg";
-import imgOne from "../../Assets/New/service-price-img-01.jpg";
-import imgTwo from "../../Assets/New/service-price-img-02.jpg";
-import imgThree from "../../Assets/New/service-price-img-03.jpg";
-import imgFour from "../../Assets/New/service-price-img-04.jpg";
+import backgroundImg from "../../Assets/Service-Price-BG.jpg";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { serviceData } from "../../Data/ServiceData";
+import ServicePriceBox from "./ServicePriceBox/ServicePriceBox";
 
 const ServicesPrices = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
   return (
     <div className="servicePrice">
       <Parallax
@@ -27,37 +61,17 @@ const ServicesPrices = () => {
             </div>
           </div>
           <div className="servicePriceContentBottom">
-            <div className="servicePriceContentBottomBox">
-              <img src={imgOne} alt="" />
-              <div className="serviceContentBottomBoxInfo">
-                <p className="serviceMemberName">Rithma Randima</p>
-                <p className="serviceMemberPosition">Owner</p>
-              </div>
-            </div>
-
-            <div className="servicePriceContentBottomBox">
-              <img src={imgTwo} alt="" />
-              <div className="serviceContentBottomBoxInfo">
-                <p className="serviceMemberName">Rithma Randima</p>
-                <p className="serviceMemberPosition">Owner</p>
-              </div>
-            </div>
-
-            <div className="servicePriceContentBottomBox">
-              <img src={imgThree} alt="" />
-              <div className="serviceContentBottomBoxInfo">
-                <p className="serviceMemberName">Rithma Randima</p>
-                <p className="serviceMemberPosition">Owner</p>
-              </div>
-            </div>
-
-            <div className="servicePriceContentBottomBox">
-              <img src={imgFour} alt="" />
-              <div className="serviceContentBottomBoxInfo">
-                <p className="serviceMemberName">Rithma Randima</p>
-                <p className="serviceMemberPosition">Owner</p>
-              </div>
-            </div>
+            <Slider {...settings}>
+              {serviceData.map((data) => (
+                <ServicePriceBox
+                  img={data.img}
+                  key={data.id}
+                  title={data.title}
+                  description={data.description}
+                  price={data.price}
+                />
+              ))}
+            </Slider>
           </div>
         </div>
       </Parallax>

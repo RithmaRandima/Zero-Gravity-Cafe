@@ -2,17 +2,12 @@ import React from "react";
 import "./Staff.css";
 import { Parallax } from "react-parallax";
 import backgroundImage from "../../Assets/Background-Image.jpg";
-import img1 from "../../Assets/staff-1.avif";
-import img2 from "../../Assets/staff-2.jpg";
-import img3 from "../../Assets/staff-3.jpg";
-import img4 from "../../Assets/staff-4.jpg";
-import img5 from "../../Assets/staff-5.webp";
-import img6 from "../../Assets/staff-6.jpg";
 import StaffMemberBox from "../StaffMemberBox/StaffMemberBox";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { staffData } from "../../Data/StaffData";
 
 const Staff = () => {
   var settings = {
@@ -22,7 +17,7 @@ const Staff = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1600,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -68,36 +63,14 @@ const Staff = () => {
           </div>
           <div className="staffContentBottom">
             <Slider {...settings}>
-              <StaffMemberBox
-                img={img1}
-                name="Henry Cavil"
-                position="Founder / CEO"
-              />
-              <StaffMemberBox
-                img={img2}
-                name="Thisara Perera "
-                position="Travel Argent"
-              />
-              <StaffMemberBox
-                img={img3}
-                name="Rithma Randima"
-                position="Travel Argent"
-              />
-              <StaffMemberBox
-                img={img4}
-                name="Tharushi Gunarathne"
-                position="Travel Argent"
-              />
-              <StaffMemberBox
-                img={img5}
-                name="Amber Heard"
-                position="Manager"
-              />
-              <StaffMemberBox
-                img={img6}
-                name="Lahiru Chanchala"
-                position="Travel Argent"
-              />
+              {staffData.map((data) => (
+                <StaffMemberBox
+                  key={data.id}
+                  img={data.img}
+                  name={data.name}
+                  position={data.position}
+                />
+              ))}
             </Slider>
           </div>
         </div>

@@ -10,10 +10,7 @@ const EventBox = (props) => {
       <div className="eventInfo">
         <p className="eventTitle">{props.title}</p>
         <p className="eventDate">{props.date}</p>
-        <p className="eventDetail">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quia
-          rerum ex odio?
-        </p>
+        <p className="eventDetail">{props.description}</p>
       </div>
     </div>
   );

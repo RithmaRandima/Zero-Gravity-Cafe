@@ -46,65 +46,10 @@
 }
 
 .servicePriceContentBottom {
-  flex-basis: 60%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 30px;
-  width: 90%;
+  width: 100%;
+  padding: 20px 0;
+  height: 100%;
   margin: auto;
-}
-.servicePriceContentBottomBox {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgb(0, 247, 255);
-}
-
-.servicePriceContentBottomBox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.4s;
-}
-
-.serviceContentBottomBoxInfo {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.416),
-    rgba(0, 247, 255, 0.74)
-  );
-  transition: 0.4s;
-  opacity: 0;
-}
-
-.serviceMemberName {
-  font-size: 1.6rem;
-  margin-bottom: 5px;
-}
-.serviceMemberPosition {
-  font-weight: 900;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.servicePriceContentBottomBox:hover img {
-  transform: scale(1.03);
-}
-
-.servicePriceContentBottomBox:hover .serviceContentBottomBoxInfo {
-  height: 110px;
-  opacity: 1;
 }
 
 @media screen and (max-width: 840px) {

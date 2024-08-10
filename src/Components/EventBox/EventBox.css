@@ -1,5 +1,5 @@
 .eventBox {
-  width: 100%;
+  width: 100% !important;
   height: fit-content;
   background-image: linear-gradient(
     to Bottom,
@@ -64,4 +64,23 @@
 
 .eventBox:hover .eventImgContainer img {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 840px) {
+  .eventBox {
+    width: 100% !important;
+  }
+  .eventBox:nth-child(2),
+  .eventBox:nth-child(3) {
+    margin-top: 0px !important;
+  }
+  .eventImgContainer {
+    height: 280px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eventBox {
+    width: 90% !important;
+  }
 }

@@ -29,8 +29,8 @@
 }
 .contact-left-img-container::before {
   content: "";
-  height: 90vh;
-  width: 430px;
+  height: 91vh;
+  width: 440px;
   border: 3px dashed rgb(0, 247, 255);
   border-radius: 40px;
   rotate: 8deg;

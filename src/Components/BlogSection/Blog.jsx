@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.css";
-import img from "../../Assets/New/MealImg.jpg";
+import img from "../../Assets/MealImg.jpg";
 
 const Blog = () => {
   return (

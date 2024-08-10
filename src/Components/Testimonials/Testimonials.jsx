@@ -1,11 +1,26 @@
 import React from "react";
 import "./Testimonials.css";
-import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import userImg from "../../Assets/EventPoster01.jpg";
+import TestimonialBox from "./TestimonialBox/TestimonialBox";
+import { testimonialData } from "../../Data/TestimonialData";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const Testimonials = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+  };
   return (
     <div className="testimonials">
       <div className="testiContainer">
@@ -32,7 +47,7 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="testiRight">
-          <BiSolidQuoteAltLeft className="testiQuoteMark" />
+          {/* <BiSolidQuoteAltLeft className="testiQuoteMark" />
           <h1 className="testiQuote">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat
             sapiente at ducimus inventore, aperiam non enim cumque error
@@ -50,15 +65,26 @@ const Testimonials = () => {
                 <p className="testiUserPosition">Sales Manager</p>
               </div>
             </div>
-            <div className="testiButtonContainer">
-              <button className="testiBtn testiBtnLeft">
-                <FaArrowLeft className="btnIcon" />
-              </button>
-              <button className="testiBtn testiBtnRight">
-                <FaArrowRight className="btnIcon" />
-              </button>
-            </div>
-          </div>
+          </div> */}
+          <Slider {...settings}>
+            {testimonialData.map((data) => (
+              <TestimonialBox
+                key={data.id}
+                img={data.img}
+                message={data.message}
+                name={data.name}
+                city={data.city}
+              />
+            ))}
+          </Slider>
+        </div>
+        <div className="testiButtonContainer">
+          <button className="testiBtn testiBtnLeft">
+            <FaArrowLeft className="btnIcon" />
+          </button>
+          <button className="testiBtn testiBtnRight">
+            <FaArrowRight className="btnIcon" />
+          </button>
         </div>
       </div>
     </div>

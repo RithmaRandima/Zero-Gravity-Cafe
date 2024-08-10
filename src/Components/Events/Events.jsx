@@ -1,10 +1,7 @@
 import React from "react";
 import "./Events.css";
-import eventPoster01 from "../../Assets/EventPoster01.jpg";
-import eventPoster02 from "../../Assets/EventPoster02.jpg";
-import eventPoster03 from "../../Assets/EventPoster03.jpg";
-import eventPoster04 from "../../Assets/EventPoster04.jpg";
 import EventBox from "../EventBox/EventBox";
+import { EventData } from "../../Data/EventData";
 
 const Events = () => {
   return (
@@ -21,10 +18,17 @@ const Events = () => {
           </p>
         </div>
         <div className="eventBoxContainer">
-          <EventBox img={eventPoster01} title="Pool Boys" date="JUL 17 2024" />
-          <EventBox img={eventPoster02} title="Take IT" date="JUNE 23 2024" />
-          <EventBox img={eventPoster03} title="Mid Night" date="JUNE 31 2024" />
-          <EventBox img={eventPoster04} title="Take IT" date="JUNE 23 2024" />
+          {EventData.map((data) => {
+            return (
+              <EventBox
+                img={data.img}
+                title={data.title}
+                key={data.id}
+                date={data.date}
+                description={data.description}
+              />
+            );
+          })}
         </div>
         <button className="eventBtn">View More Events</button>
       </div>

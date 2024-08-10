@@ -1,12 +1,13 @@
 import React from "react";
 import "./AboutServices.css";
-import img from "../../Assets/EventPoster02.jpg";
+
 import { ReactTyped } from "react-typed";
 import AboutServiceBox from "../AboutServiceBox/AboutServiceBox";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { serviceData } from "../../Data/ServiceData";
 
 const AboutServices = () => {
   var settings = {
@@ -59,12 +60,17 @@ const AboutServices = () => {
             explicabo!
           </p>
         </div>
+
         <div className="aboutServiceBottom">
           <Slider {...settings}>
-            <AboutServiceBox img={img} />
-            <AboutServiceBox img={img} />
-            <AboutServiceBox img={img} />
-            <AboutServiceBox img={img} />
+            {serviceData.map((data) => (
+              <AboutServiceBox
+                img={data.img}
+                key={data.id}
+                title={data.title}
+                description={data.description}
+              />
+            ))}
           </Slider>
         </div>
       </div>

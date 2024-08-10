@@ -1,6 +1,6 @@
 import React from "react";
 import "./SmoothieSection.css";
-import img1 from "../../Assets/New/pexels-tima-miroshnichenko-6498312.jpg";
+import img1 from "../../Assets/news-1.jpg";
 import SmoothieBox from "./SmoothieBox/SmoothieBox";
 
 import "slick-carousel/slick/slick.css";

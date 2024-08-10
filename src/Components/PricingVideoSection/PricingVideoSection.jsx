@@ -1,6 +1,6 @@
 import React from "react";
 import "./PricingVideoSection.css";
-import pricing_video from "../../Assets/New/PricingVideo.mp4";
+import pricing_video from "../../Assets/PricingVideo.mp4";
 
 const PricingVideoSection = () => {
   return (

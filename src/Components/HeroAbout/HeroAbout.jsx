@@ -1,5 +1,5 @@
 import React from "react";
-import about__video from "../../Assets/New/AboutHero.mp4";
+import about__video from "../../Assets/AboutHero.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./HeroAbout.css";

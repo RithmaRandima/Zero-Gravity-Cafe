@@ -1,8 +1,46 @@
 import React from "react";
 import "./PricingNews.css";
-import img from "../../Assets/New/MealImg.jpg";
+import { pricingNewsData } from "../../Data/PricingNewsData";
+import PricingNewsBox from "./PricingNewsBox/PricingNewsBox";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const PricingNews = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="news">
       <div className="newsContainer">
@@ -14,92 +52,18 @@ const PricingNews = () => {
           </p>
         </div>
         <div className="newsBottomSection">
-          <div className="newsBottomBox">
-            <div className="newsImgContainer">
-              <img src={img} alt="" />
-            </div>
-            <div className="newsBoxTopInfo">
-              <p>Admin</p>
-              <p>12 May 2024</p>
-            </div>
-            <div className="newsMiddleInfo">
-              <h1 className="newsBoxTitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                architecto sequi consequuntur in debitis?
-              </p>
-            </div>
-            <div className="newsBottomBtnContainer">
-              <button className="newsReadMoreBtn">REad More</button>
-            </div>
-          </div>
-          <div className="newsBottomBox">
-            <div className="newsImgContainer">
-              <img src={img} alt="" />
-            </div>
-            <div className="newsBoxTopInfo">
-              <p>Admin</p>
-              <p>12 May 2024</p>
-            </div>
-            <div className="newsMiddleInfo">
-              <h1 className="newsBoxTitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                architecto sequi consequuntur in debitis?
-              </p>
-            </div>
-            <div className="newsBottomBtnContainer">
-              <button className="newsReadMoreBtn">REad More</button>
-            </div>
-          </div>
-
-          <div className="newsBottomBox">
-            <div className="newsImgContainer">
-              <img src={img} alt="" />
-            </div>
-            <div className="newsBoxTopInfo">
-              <p>Admin</p>
-              <p>12 May 2024</p>
-            </div>
-            <div className="newsMiddleInfo">
-              <h1 className="newsBoxTitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                architecto sequi consequuntur in debitis?
-              </p>
-            </div>
-            <div className="newsBottomBtnContainer">
-              <button className="newsReadMoreBtn">REad More</button>
-            </div>
-          </div>
-
-          <div className="newsBottomBox">
-            <div className="newsImgContainer">
-              <img src={img} alt="" />
-            </div>
-            <div className="newsBoxTopInfo">
-              <p>Admin</p>
-              <p>12 May 2024</p>
-            </div>
-            <div className="newsMiddleInfo">
-              <h1 className="newsBoxTitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                architecto sequi consequuntur in debitis?
-              </p>
-            </div>
-            <div className="newsBottomBtnContainer">
-              <button className="newsReadMoreBtn">REad More</button>
-            </div>
-          </div>
+          <Slider {...settings}>
+            {pricingNewsData.map((data) => (
+              <PricingNewsBox
+                key={data.id}
+                img={data.img}
+                title={data.title}
+                author={data.author}
+                date={data.date}
+                description={data.description}
+              />
+            ))}
+          </Slider>
         </div>
       </div>
     </div>

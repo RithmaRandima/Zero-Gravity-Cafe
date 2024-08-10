@@ -1,6 +1,6 @@
 .contactStaffContentBottomBox {
   width: 90%;
-  height: 300px;
+  height: 270px;
   margin: 5px auto;
   background: #000;
   position: relative;
@@ -29,17 +29,18 @@
   );
   transition: 0.4s;
   opacity: 0;
+  text-align: center;
 }
 
 .contactStaffMemberName {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0;
 }
 .contactStaffMemberPosition {
   margin-top: 0;
   font-weight: 900;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   letter-spacing: 4px;
   color: #ffffff95;
   text-transform: uppercase;
@@ -51,7 +52,7 @@
   gap: 20px;
 }
 .contactSocialIcon {
-  font-size: 15px;
+  font-size: 13px;
   color: rgba(0, 247, 255, 0.758);
   /* color: black; */
   transition: 0.4s;

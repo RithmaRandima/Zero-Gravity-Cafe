@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeroHome.css";
-import home_video from "../../Assets/New/HomeHero.mp4";
+import home_video from "../../Assets/HomeHero.mp4";
 import { FaPlayCircle } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 
