@@ -6,6 +6,7 @@ import SmoothieBox from "./SmoothieBox/SmoothieBox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { smoothieData } from "../../Data/SmoothieData";
 
 const SmoothieSection = () => {
   var settings = {
@@ -43,7 +44,7 @@ const SmoothieSection = () => {
   return (
     <div className="SmoothieSection">
       <div className="SmoothieBoxTitle">
-        <h1>Our Staff</h1>
+        <h1>Best Smoothies</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae
           deserunt delectus autem excepturi, quod ex voluptatum repellendus
@@ -51,11 +52,16 @@ const SmoothieSection = () => {
       </div>
       <div className="SmoothieSectionContainer">
         <Slider {...settings}>
-          <SmoothieBox img={img1} name="Rithma Randima" price="210" />
-          <SmoothieBox img={img1} name="Rithma Randima" price="190" />
-          <SmoothieBox img={img1} name="Rithma Randima" price="200" />
-          <SmoothieBox img={img1} name="Rithma Randima" price="170" />
-          <SmoothieBox img={img1} name="Rithma Randima" price="90" />
+          {smoothieData.map((data) => {
+            return (
+              <SmoothieBox
+                key={data.id}
+                img={data.img}
+                name={data.name}
+                price={data.price}
+              />
+            );
+          })}
         </Slider>
       </div>
       ;

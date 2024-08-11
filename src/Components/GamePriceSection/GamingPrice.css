@@ -67,6 +67,7 @@
 .gamingPriceText {
   color: rgb(254, 15, 254);
   animation: gamingText 2s ease-in-out infinite;
+  animation-delay: 0.5s;
   position: absolute;
   left: 130px;
 }

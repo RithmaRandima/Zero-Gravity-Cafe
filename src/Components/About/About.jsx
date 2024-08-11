@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css";
-import img from "../../Assets/EventPoster01.jpg";
+import img1 from "../../Assets/priceGaming-2.jpg";
+import img2 from "../../Assets/Pacakeg-Background.jpg";
+import img3 from "../../Assets/priceMovie-1.webp";
+import img4 from "../../Assets/contact-form-img.jpg";
 
 const About = () => {
   return (
@@ -17,13 +20,13 @@ const About = () => {
 
           <div className="aboutLeftImages">
             <div className="leftImageBox">
-              <img src={img} alt="" />
+              <img src={img1} alt="" />
             </div>
             <div className="leftImageBox">
-              <img src={img} alt="" />
+              <img src={img2} alt="" />
             </div>
             <div className="leftImageBox">
-              <img src={img} alt="" />
+              <img src={img3} alt="" />
             </div>
           </div>
         </div>
@@ -37,7 +40,7 @@ const About = () => {
             temporibus sunt facilis eatque.
           </p>
           <div className="aboutRightImgContainer">
-            <img src={img} alt="" />
+            <img src={img4} alt="" />
           </div>
         </div>
       </div>
