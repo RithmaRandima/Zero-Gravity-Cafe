@@ -168,8 +168,12 @@
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 0.5s;
 }
 
+.cafeBtn:hover {
+  background: rgba(0, 247, 255, 0.805);
+}
 @media screen and (max-width: 840px) {
   .meal-top {
     flex-direction: column;

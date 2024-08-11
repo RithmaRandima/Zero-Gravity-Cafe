@@ -67,6 +67,11 @@
   border-radius: 50px;
   border: 1px solid rgb(0, 247, 255);
   color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.bookNowBtn:hover {
+  background: rgba(0, 247, 255, 0.805);
 }
 .launchBtn {
   border: none;
@@ -80,6 +85,11 @@
   font-size: 40px;
   color: rgb(0, 247, 255) !important;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.launchBtn:hover .playIcon {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 840px) {

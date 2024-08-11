@@ -86,6 +86,11 @@
   font-size: 40px;
   color: rgb(254, 15, 254) !important;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.aboutLaunchBtn:hover .playIcon {
+  transform: scale(1.2);
 }
 
 .AboutVerticalLine {

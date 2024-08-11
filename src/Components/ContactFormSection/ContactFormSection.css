@@ -140,6 +140,11 @@
   font-size: 14px;
   font-weight: bolder;
   border-radius: 50px;
+  transition: 0.5s;
+}
+
+.contact-form-button:hover {
+  background: rgb(254, 15, 254);
 }
 
 @media screen and (max-width: 840px) {

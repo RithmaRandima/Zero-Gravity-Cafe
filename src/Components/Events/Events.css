@@ -57,6 +57,10 @@
   border-radius: 50px;
   font-size: 12px;
   font-weight: 100 !important;
+  transition: 0.5s;
+}
+.eventBtn:hover {
+  background: rgba(0, 247, 255, 0.805);
 }
 
 @media screen and (max-width: 840px) {

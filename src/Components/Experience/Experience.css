@@ -74,6 +74,11 @@
   margin-top: 15px;
   outline: 0;
   border-radius: 50px;
+  transition: 0.5s;
+}
+
+.bookBtn:hover {
+  background: rgba(0, 247, 255, 0.805);
 }
 
 @media screen and (max-width: 868px) {

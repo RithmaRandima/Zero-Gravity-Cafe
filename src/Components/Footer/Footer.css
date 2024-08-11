@@ -59,17 +59,23 @@
   margin: 10px auto;
 }
 .social-icon-container {
-  width: 34px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   color: #fff;
-  height: 34px;
   border: 2px solid rgb(37, 175, 255);
+  font-size: 13px;
+  transition: 0.5s;
 }
 .social-icon-container:nth-child(3) {
   background-color: rgb(37, 175, 255);
+}
+
+.social-icon-container:hover {
+  transform: scale(1.1);
 }
 
 .footer-bottom {
