@@ -15,7 +15,11 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-top-content-box">
             <img src="" alt="" />
-            <h5>Gaaxy freeanr</h5>
+            <div className="logo-section">
+              <h1>
+                Zero<span>Gravity</span>
+              </h1>
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               debitis, autem laudantium cupiditate repudiandae cumque dolorum
