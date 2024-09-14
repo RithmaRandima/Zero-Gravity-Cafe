@@ -1,7 +1,7 @@
 import React from "react";
 import "./GamingPrice.css";
-import img1 from "../../Assets/priceGaming-1.jpg";
-import img2 from "../../Assets/priceGaming-2.jpg";
+import img1 from "../../Assets/priceGaming-1.jpeg";
+import img2 from "../../Assets/priceGaming-2.jpeg";
 
 const GamingPrice = () => {
   return (

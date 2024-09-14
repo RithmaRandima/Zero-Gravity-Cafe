@@ -28,7 +28,7 @@
   height: 240px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.179), rgba(0, 0, 0, 0.189)),
-    url("../../Assets/ExperienceBackground.jpg");
+    url("../../Assets/ExperienceBackground.jpeg");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -42,7 +42,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../Assets/ExperienceBackground.jpg");
+    url("../../Assets/ExperienceBackground.jpeg");
   background-position: center center;
   background-size: cover;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ServicesPrices.css";
 import { Parallax } from "react-parallax";
-import backgroundImg from "../../Assets/Service-Price-BG.jpg";
+import backgroundImg from "../../Assets/Service-Price-BG.jpeg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

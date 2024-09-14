@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
-import img1 from "../../Assets/priceGaming-2.jpg";
-import img2 from "../../Assets/Pacakeg-Background.jpg";
+import img1 from "../../Assets/priceGaming-2.jpeg";
+import img2 from "../../Assets/Pacakeg-Background.jpeg";
 import img3 from "../../Assets/priceMovie-1.webp";
-import img4 from "../../Assets/contact-form-img.jpg";
+import img4 from "../../Assets/contact-form-img.jpeg";
 
 const About = () => {
   return (

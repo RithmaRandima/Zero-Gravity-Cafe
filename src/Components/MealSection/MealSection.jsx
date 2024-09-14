@@ -1,6 +1,6 @@
 import React from "react";
 import "./MealSection.css";
-import meal_img from "../../Assets/MealImg.jpg";
+import meal_img from "../../Assets/MealImg.jpeg";
 import { FaChevronDown } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 

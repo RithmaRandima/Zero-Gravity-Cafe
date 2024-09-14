@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactFormSection.css";
-import img1 from "../../Assets/contact-form-img.jpg";
+import img1 from "../../Assets/contact-form-img.jpeg";
 
 const ContactFormSection = () => {
   return (

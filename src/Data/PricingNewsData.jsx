@@ -2,8 +2,8 @@ import img1 from "../Assets/news-1.jfif";
 import img2 from "../Assets/news-2.webp";
 import img3 from "../Assets/news-3.webp";
 import img4 from "../Assets/news-4.webp";
-import img5 from "../Assets/priceGaming-1.jpg";
-import img6 from "../Assets/service-2.jpg";
+import img5 from "../Assets/priceGaming-1.jpeg";
+import img6 from "../Assets/service-2.jpeg";
 export const pricingNewsData = [
   {
     id: 1,

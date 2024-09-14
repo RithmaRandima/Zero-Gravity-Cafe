@@ -1,7 +1,7 @@
-import img1 from "../Assets/EventPoster01.jpg";
-import img2 from "../Assets/EventPoster02.jpg";
-import img3 from "../Assets/EventPoster03.jpg";
-import img4 from "../Assets/EventPoster04.jpg";
+import img1 from "../Assets/EventPoster01.jpeg";
+import img2 from "../Assets/EventPoster02.jpeg";
+import img3 from "../Assets/EventPoster03.jpeg";
+import img4 from "../Assets/EventPoster04.jpeg";
 
 export const EventData = [
   {

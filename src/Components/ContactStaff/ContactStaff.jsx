@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactStaff.css";
 import { Parallax } from "react-parallax";
-import backgroundImage from "../../Assets/Background-Image.jpg";
+import backgroundImage from "../../Assets/Background-Image.jpeg";
 import ContactStaffMemberBox from "./ContactStaffMemberBox/ContactStaffMemberBox";
 
 import "slick-carousel/slick/slick.css";
