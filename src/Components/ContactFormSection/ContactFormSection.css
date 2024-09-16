@@ -182,6 +182,14 @@
     font-size: 14px;
   }
 
+  .contact-form-right {
+    padding: 30px 10px;
+  }
+  .contact-input-section {
+    gap: 5px;
+    padding-right: 10px;
+  }
+
   .contact-form-button {
     padding: 9px 20px;
     font-size: 10px;

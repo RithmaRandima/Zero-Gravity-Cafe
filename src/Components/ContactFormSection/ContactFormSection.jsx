@@ -23,6 +23,7 @@ const ContactFormSection = () => {
               <label>Name *</label>
               <input type="text" />
             </div>
+
             <div className="contact-input-container">
               <label>Email *</label>
               <input type="" />

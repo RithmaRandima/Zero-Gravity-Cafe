@@ -3,7 +3,7 @@ import "./ContactInfoBox.css";
 
 const ContactInfoBox = (props) => {
   return (
-    <div className="contact-info-box">
+    <div className="contact-info-box my-[100px] md:my-5">
       <div className="box-icon">{props.icon}</div>
       <p className="box-title">{props.title}</p>
       <p className="box-title-value">{props.titleValue}</p>

@@ -24,15 +24,15 @@ const HeroContact = () => {
             />
           </span>
         </h1>
-        <p>
+        <p className="md:w-[70%]">
           The Best VR Experience On The Planet is Right Here in Your
-          Neighborhood. What Will happen When <br /> You Step In to ZeroGravity
-          Cafe Together With Friends?
+          Neighborhood. What Will happen When You Step In to ZeroGravity Cafe
+          Together With Friends?
         </p>
 
         <div className="btnContainer">
           <Link to="/contact" className="btn aboutLaunchBtn">
-            <IoIosContacts className="playIcon" /> Contact Us
+            <IoIosContacts className="playIcon" /> Contact
           </Link>
         </div>
       </div>

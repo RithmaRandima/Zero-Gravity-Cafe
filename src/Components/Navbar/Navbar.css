@@ -7,7 +7,7 @@
   align-items: center;
   padding: 1rem 2rem;
   box-sizing: border-box !important;
-  z-index: 10;
+  z-index: 100;
 }
 
 .header-bg {

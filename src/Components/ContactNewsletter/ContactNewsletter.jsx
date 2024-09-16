@@ -3,7 +3,7 @@ import "./ContactNewsletter.css";
 
 const ContactNewsletter = () => {
   return (
-    <div className="contact-newsletter">
+    <div className="contact-newsletter hidden md:flex">
       <h1>Discover the possibilities of virtual reality for your business.</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
