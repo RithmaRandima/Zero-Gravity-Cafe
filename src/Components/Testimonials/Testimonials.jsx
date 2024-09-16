@@ -22,20 +22,20 @@ const Testimonials = () => {
     initialSlide: 0,
   };
   return (
-    <div className="testimonials">
+    <div className="testimonials py-10 md:py-5">
       <div className="testiContainer">
         <div className="testiLeft">
           <h1>What People Say</h1>
           <h1>About Zero Gravity Cafe</h1>
 
-          <p>
+          <p className="hidden md:block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             dolorum eligendi provident inventore ipsam quo fugit quae esse quod
             quam veniam amet beatae, consequatur corporis enim veritatis
             exercitationem placeat! Maiores!
           </p>
 
-          <p>
+          <p className="hidden md:block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
             debitis deserunt? Expedita praesentium voluptate error excepturi
             distinctio! Eaque quam dicta beatae autem aut porro cumque incidunt
@@ -47,25 +47,6 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="testiRight">
-          {/* <BiSolidQuoteAltLeft className="testiQuoteMark" />
-          <h1 className="testiQuote">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat
-            sapiente at ducimus inventore, aperiam non enim cumque error
-            suscipit quibusdam soluta! Animi excepturi similique magni quam!
-            Qui, itaque aut!
-          </h1>
-
-          <div className="testiUserSection">
-            <div className="testiUserDetails">
-              <div className="testUserImgContainer">
-                <img src={userImg} alt="" />
-              </div>
-              <div>
-                <p className="testiUserName">RIthma Randima</p>
-                <p className="testiUserPosition">Sales Manager</p>
-              </div>
-            </div>
-          </div> */}
           <Slider {...settings}>
             {testimonialData.map((data) => (
               <TestimonialBox

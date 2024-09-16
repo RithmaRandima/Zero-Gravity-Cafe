@@ -83,6 +83,16 @@
 
 @media screen and (max-width: 868px) {
   .experience {
-    margin: 120px 0;
+    height: 70vh;
+    margin: 40px 0;
+  }
+  .experience .container {
+    width: 100%;
+  }
+  .contentBox {
+    width: 100%;
+  }
+  .content-info {
+    width: 100%;
   }
 }

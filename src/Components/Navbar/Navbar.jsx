@@ -35,7 +35,12 @@ const Navbar = () => {
       </Link>
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li onClick={() => setNavActive("home")}>
+        <li
+          onClick={() => {
+            setNavActive("home");
+            setClick(!click);
+          }}
+        >
           <Link
             to="/"
             style={{
@@ -45,7 +50,12 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li onClick={() => setNavActive("about")}>
+        <li
+          onClick={() => {
+            setNavActive("about");
+            setClick(!click);
+          }}
+        >
           <Link
             to="/about"
             style={{
@@ -55,7 +65,12 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li onClick={() => setNavActive("packages")}>
+        <li
+          onClick={() => {
+            setNavActive("packages");
+            setClick(!click);
+          }}
+        >
           <Link
             to="/packages"
             style={{
@@ -65,7 +80,12 @@ const Navbar = () => {
             Packages
           </Link>
         </li>
-        <li onClick={() => setNavActive("contact")}>
+        <li
+          onClick={() => {
+            setNavActive("contact");
+            setClick(!click);
+          }}
+        >
           <Link
             to="/contact"
             style={{

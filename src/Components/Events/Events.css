@@ -33,11 +33,11 @@
   line-height: 2;
   font-weight: 100;
   width: 90%;
+  margin: auto;
 }
 .eventBoxContainer {
   width: 90%;
   flex: 1;
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   overflow: hidden;
@@ -45,6 +45,7 @@
   padding-top: 10px;
   place-items: center;
   padding: 30px;
+  margin: auto;
 }
 
 .eventBtn {

@@ -20,14 +20,14 @@ const Footer = () => {
                 Zero<span>Gravity</span>
               </h1>
             </div>
-            <p>
+            <p className="hidden md:block">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               debitis, autem laudantium cupiditate repudiandae cumque dolorum
               nobis quos totam maxime.
             </p>
           </div>
 
-          <div className="footer-top-content-box">
+          <div className="footer-top-content-box hidden md:block">
             <h5>Resources</h5>
             <p>Terms & Condition</p>
             <p>Privacy Policy</p>
@@ -43,9 +43,9 @@ const Footer = () => {
             <p>Home</p>
           </div>
 
-          <div className="footer-top-content-box">
+          <div className="footer-top-content-box flex flex-col items-center md:items-start">
             <h5>Contact</h5>
-            <p>
+            <p className="md:w-[100%] w-[50%] mx-auto">
               Address: 2001 W. Trenton,nUnit 108, Edinburg, TX. 78539 &
               Condition
             </p>
@@ -73,7 +73,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>&#169; Zero Gravity Cafe 2024 &#183; All Right Reserved.</p>
-          <div style={{ display: "flex" }}>
+          <div className="hidden md:flex">
             <p>Privacy Policy</p>
             <p>Terms of Use</p>
           </div>
