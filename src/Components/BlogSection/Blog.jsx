@@ -6,7 +6,7 @@ import img3 from "../../Assets/service-3.jpeg";
 
 const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog hidden md:block">
       <div className="blogContainer">
         <div className="blogTopSection">
           <h1>Our Latest Blog</h1>

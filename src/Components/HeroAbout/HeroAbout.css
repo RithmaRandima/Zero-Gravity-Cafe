@@ -65,8 +65,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  color: red;
+  width: 200px !important;
+  gap: 10px;
 }
 .hero .btn {
   margin: 1rem 0.5rem;
@@ -112,7 +112,23 @@
   background-color: rgb(254, 15, 254);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
+  #aboutVideo {
+    height: 80vh;
+  }
+
+  .heroAbout {
+    height: 80vh;
+  }
+  .heroAbout .AboutContent {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   .hero .content {
     text-align: center;
     position: absolute;
@@ -132,5 +148,12 @@
   .heroAbout .AboutContent p {
     font-size: 14px !important;
     margin-bottom: 15px !important;
+  }
+
+  .AboutVerticalLine {
+    bottom: 70px;
+  }
+  .AboutHorizontalLine {
+    left: 10px;
   }
 }

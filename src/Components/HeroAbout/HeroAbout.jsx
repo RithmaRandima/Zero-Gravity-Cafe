@@ -31,7 +31,7 @@ const HeroAbout = () => {
 
         <div className="btnContainer">
           <Link to="/contact" className="btn aboutLaunchBtn">
-            <FaPlayCircle className="playIcon" /> Explore Now
+            <FaPlayCircle className="playIcon" /> Explore
           </Link>
         </div>
       </div>

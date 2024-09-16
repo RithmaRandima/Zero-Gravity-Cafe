@@ -5,7 +5,7 @@ import img2 from "../../Assets/priceMovie-2.webp";
 
 const CinemaPricing = () => {
   return (
-    <div className="cinemaPrice">
+    <div className="cinemaPrice hidden md:block">
       <div className="cinemaPriceContainer">
         <div className="cinemaPriceContainerLeft">
           <h1 className="cinemaPriceTitle">
